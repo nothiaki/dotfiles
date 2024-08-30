@@ -2,8 +2,8 @@ font pango:monospace 8
 
 set $mod Mod4
 
-gaps inner 6
-gaps outer 6
+gaps inner 2
+gaps outer 1
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -16,10 +16,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-set $up l
-set $down k
-set $left j
-set $right semicolon
+set $up k
+set $down j
+set $left h
+set $right l
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -34,37 +34,17 @@ bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+q kill
 
-# start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id dmenu_run
-# A more modern dmenu replacement is rofi:
-# bindsym $mod+d exec rofi -show drun
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
 # change focus
-bindsym $mod+$left focus left
+bindsym $mod+h focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -75,8 +55,6 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
 # bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -136,21 +114,13 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # bindsym $mod+Shift+e exec ~/.config/polybar/blocks/scripts/powermenu.sh
 
-# fancy rofi
-# bindsym F1 exec ~/.config/i3/scripts/keyhint-2
-
 bindsym $mod+w exec /usr/bin/brave
 
-exec --no-startup-id sleep 1 && feh --bg-fill /home/hiaki/Images/main.jpg
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id polybar
 
 bindsym $mod+d exec rofi -modi run -show run \
 		#-theme ~/.config/polybar/blocks/scripts/rofi/launcher.rasi
-
-
-# bindsym $mod+t exec rofi -show window \
-#		-config ~/.config/rofi/rofidmenu.rasi
 
 default_border pixel 0
 default_floating_border pixel 0
@@ -159,8 +129,6 @@ default_floating_border pixel 0
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

@@ -1,5 +1,5 @@
 * {
-  font:   "JetBrainsMono Nerd Font 11";
+  font:   "JetBrainsMono Nerd Font SemiBold 11.5";
 
   bg0     : #1a1b26;
   bg1     : #1f2335;
@@ -26,50 +26,31 @@
   spacing : 0;
 }
 
-element-icon, element-text, scrollbar {
-  cursor: pointer;
-}
-
 window {
-  location : northwest;
-  width    : 280px;
-  x-offset : 4px;
-  y-offset : 26px;
+  location : center;
+  width    : 320px;
 
-  background-color: @bg1;
-  border: 1px;
-  border-color: @bg3;
+  background-color: @bg0;
 }
 
 inputbar {
   spacing  : 8px;
   padding  : 4px 8px;
-  children : [ icon-search, entry ];
+  children : [ entry ];
 
   background-color: @bg0;
 }
 
-icon-search, entry, element-icon, element-text {
-  vertical-align: 0.5;
-}
-
-icon-search {
-  expand   : false;
-  filename : "search-symbolic";
-  size     : 14px;
-}
-
 textbox {
   padding          : 4px 8px;
-  background-color : @bg2;
+  background-color : @bg0;
 }
 
 listview {
   padding      : 4px 0px;
-  lines        : 12;
+  lines        : 8;
   columns      : 1;
-  scrollbar    : true;
-  fixed-height : false;
+  fixed-height : true;
   dynamic      : true;
 }
 
@@ -95,16 +76,6 @@ element selected urgent {
   background-color: @urgent;
 }
 
-element-icon {
-  size: 0.8em;
-}
-
 element-text {
   text-color: inherit;
-}
-
-scrollbar {
-  handle-width : 4px;
-  handle-color : @fg2;
-  padding      : 0 4px;
 }

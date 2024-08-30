@@ -4,11 +4,15 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set relativenumber")
 vim.cmd("set signcolumn=yes")
+vim.cmd("set guicursor=n-v-i-c:block-Cursor")
+--vim.cmd("set colorcolumn=80")
+--vim.cmd("set fillchars+=eob:~")
+
 vim.o.showmode = false
 vim.g.mapleader = " "
-
-vim.opt.swapfile = false
 vim.wo.number = true
+vim.opt.swapfile = false
+vim.opt.clipboard = "unnamedplus"
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
@@ -25,3 +29,4 @@ vim.cmd([[
     autocmd ColorScheme * highlight TelescopePromptTitle guifg=#27a1b9 guibg=#16161e
   augroup END
 ]])
+
