@@ -28,8 +28,8 @@ return {
       end,
     })
 
-    vim.keymap.set("n", "[b", "<cmd>BufferLineCyclePrev<cr>", {})
-    vim.keymap.set("n", "]b", "<cmd>BufferLineCycleNext<cr>", {})
+    vim.keymap.set("n", "nb", "<cmd>BufferLineCycleNext<cr>", {})
+    vim.keymap.set("n", "pb", "<cmd>BufferLineCyclePrev<cr>", {})
     vim.keymap.set("n", "<leader>bd", "<cmd>:bd<cr>", {})
   end,
 }
