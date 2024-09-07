@@ -27,6 +27,7 @@
 }
 
 window {
+  padding : 8px;
   location : center;
   width    : 320px;
 
@@ -42,12 +43,12 @@ inputbar {
 }
 
 textbox {
+  str: "block";
   padding          : 4px 8px;
   background-color : @bg0;
 }
 
 listview {
-  padding      : 4px 0px;
   lines        : 8;
   columns      : 1;
   fixed-height : true;
