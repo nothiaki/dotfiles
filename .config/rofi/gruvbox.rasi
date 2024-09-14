@@ -1,0 +1,63 @@
+* {
+  font:   "JetBrainsMono Nerd Font SemiBold 11";
+
+  bg   : #282828;
+  fg   : #ebdbb2;
+  aqua : #689d6a;
+
+  accent: @aqua;
+
+  background-color : transparent;
+  text-color       : @fg;
+
+  margin  : 0;
+  padding : 0;
+  spacing : 0;
+}
+
+window {
+  padding : 8px;
+  location : center;
+  width    : 320px;
+
+  background-color: @bg;
+}
+
+inputbar {
+  spacing  : 8px;
+  padding  : 4px 8px;
+  children : [ entry ];
+
+  background-color: @bg;
+}
+
+textbox {
+  str: "block";
+  padding          : 4px 8px;
+  background-color : @bg;
+}
+
+listview {
+  lines        : 8;
+  columns      : 1;
+  fixed-height : true;
+  dynamic      : true;
+}
+
+element {
+  padding : 4px 8px;
+  spacing : 8px;
+}
+
+element normal active {
+  text-color: @accent;
+}
+
+element selected {
+  text-color       : @bg;
+  background-color : @accent;
+}
+
+element-text {
+  text-color: inherit;
+}
