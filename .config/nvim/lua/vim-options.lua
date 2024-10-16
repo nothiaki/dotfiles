@@ -5,6 +5,7 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set relativenumber")
 vim.cmd("set signcolumn=yes")
 vim.cmd("set guicursor=n-v-i-c:block-Cursor")
+vim.cmd("syntax enable")
 
 vim.o.showmode = false
 vim.g.mapleader = " "
