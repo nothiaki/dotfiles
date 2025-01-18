@@ -1,0 +1,40 @@
+create symlinks
+display manager
+bright in polybar
+file explorer
+mouse sensibility
+shutdown pc btn
+cursor theme and font mayb
+
+//apps -- should implement file searcher
+bash--.bashrc
+tmux
+
+//criar um  scripot que baixa os pacote e que cria os symlinks
+
+.xoprofile
+
+packages
+nvim -- lazy?
+polybar
+i3wm
+kitty
+some fetch
+tmux
+rofi
+firefox
+docker
+docker compose
+ranger --some file manager
+nitrogen
+beekeeper
+httpie or bruno
+some net manager
+flameshot
+light -- bright manager
+pulseaudio
+sudo pacman -S pipewire pipewire-pulse
+spotify
+spicetify
+epy
+zathura -- zathura pooper
