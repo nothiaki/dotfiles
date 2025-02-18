@@ -25,7 +25,7 @@ set $right l
 bindsym $mod+Return exec kitty
 
 # start a browser
-bindsym $mod+w exec /usr/bin/firefox
+bindsym $mod+w exec /usr/bin/brave
 
 # exec rofi
 bindsym $mod+d exec rofi -modi run -show run \
@@ -35,6 +35,9 @@ exec --no-startup-id nitrogen --restore
 
 # start polybar
 exec --no-startup-id polybar
+
+# start picom
+exec picom --config ~/.config/picom/picom.conf
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
