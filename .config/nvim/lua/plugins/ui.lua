@@ -90,6 +90,8 @@ return {
             text_align = "left",
           },
         },
+        show_close_icon = false,
+        show_buffer_close_icons = false,
       },
     },
     config = function(_, opts)
