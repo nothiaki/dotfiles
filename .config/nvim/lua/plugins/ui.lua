@@ -166,6 +166,7 @@ return {
               ".git",
             },
           },
+          group_empty_dirs = true,
         }
       }
 
