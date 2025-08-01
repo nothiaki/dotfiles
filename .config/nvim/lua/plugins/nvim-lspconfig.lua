@@ -28,6 +28,7 @@ return {
         "tailwindcss",
         "ts_ls",
         "gopls",
+        "yamlls",
       },
       -- Esta é a nova forma de passar a configuração
       handlers = {
