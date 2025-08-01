@@ -14,7 +14,7 @@ return {
           folder_open = "",
           folder_empty = "",
           folder_empty_open = "",
-          default = "",
+          default = "",
           highlight = "NeoTreeFileIcon"
         },
         git_status = {

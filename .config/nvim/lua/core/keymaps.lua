@@ -63,9 +63,13 @@ keymap.set('n', '<leader>rr', '<cmd>lua vim.lsp.buf.rename()<CR>')
 keymap.set('n', '<leader>gf', '<cmd>lua vim.lsp.buf.format({async = true})<CR>')
 keymap.set('v', '<leader>gf', '<cmd>lua vim.lsp.buf.format({async = true})<CR>')
 keymap.set('n', '<leader>ga', '<cmd>lua vim.lsp.buf.code_action()<CR>')
-keymap.set('n', '<leader>gl', '<cmd>lua vim.diagnostic.open_float()<CR>')
-keymap.set('n', '<leader>gp', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
-keymap.set('n', '<leader>gn', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+
 keymap.set('n', '<leader>tr', '<cmd>lua vim.lsp.buf.document_symbol()<CR>')
 keymap.set('i', '<C-Space>', '<cmd>lua vim.lsp.buf.completion()<CR>')
 
+keymap.set('n', '<leader>df', '<cmd>lua vim.diagnostic.open_float()<CR>')
+keymap.set('n', '<leader>nd', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+keymap.set('n', '<leader>pd', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+
+-- Remove highlight
+keymap.set("n", "<leader>nh", ":nohlsearch<CR>")
