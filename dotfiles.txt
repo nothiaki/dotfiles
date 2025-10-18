@@ -38,3 +38,6 @@ spotify
 spicetify
 epy
 zathura -- zathura pooper
+
+pipes.sh
+tty-clock -c
