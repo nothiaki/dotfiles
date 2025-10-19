@@ -29,19 +29,7 @@ return {
         "ts_ls",
         "gopls",
         "yamlls",
-        "jdtls",
       },
-      -- Esta é a nova forma de passar a configuração
-      handlers = {
-        function(server_name)
-          if server_name ~= 'jdtls' then
-            lspconfig[server_name].setup({
-              on_attach = lsp_attach,
-              capabilities = lsp_capabilities,
-            })
-          end
-        end,
-      }
     })
   end
 }

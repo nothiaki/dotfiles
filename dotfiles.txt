@@ -41,3 +41,6 @@ zathura -- zathura pooper
 
 pipes.sh
 tty-clock -c
+redshift
+flameshot
+unimatrix

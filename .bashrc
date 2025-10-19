@@ -21,9 +21,6 @@ alias gu="git checkout  --"
 alias gucm="git reset --hard HEAD"
 
 #systemctl
-alias pgstart="sudo systemctl start postgresql"
-alias pgstop="sudo systemctl stop postgresql"
-
 alias dockers="sudo systemctl start docker.service"
 alias dockerp="sudo systemctl stop docker.service && sudo systemctl stop docker.socket"
 
@@ -45,32 +42,12 @@ alias prt="flameshot launcher"
 
 #system
 alias shutdown="sudo shutdown -h now"
-alias rmd="sudo rm -r"
-alias cl="clear"
 
 #unimatrix
 alias matrix="unimatrix -l o -c green"
 
-#pulseaudio
-alias audioreset="pactl set-sink-volume @DEFAULT_SINK@ 100%"
-
 #neovim
 alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
-
-#neofetch
-alias nfetch="neofetch"
-
-#tree
-alias t="tree"
-alias tl="tree -L 1"
-
-#rust
-alias rrun="cargo watch -x run"
-
-#trash-cli
-alias trashdel="trash-empty"
 
 #npm
 alias dev="npm run dev"
@@ -79,17 +56,13 @@ alias test="npm run test"
 #zip
 alias zzip="sudo zip -9 -r "
 
-#ffmpeg
-alias record="ffmpeg -f x11grab -r 60 -i :0.0 -c:v libx264 -preset ultrafast "
-
 #light
 alias brginc="sudo light -A 10"
 alias brgdec="sudo light -U 10"
 
 #==========================
 
-PS1="[\u@\h \W]\$ "
-. "$HOME/.cargo/env"
-
 export EDITOR=nvim
-export BROWSER=brave
+export BROWSER=firefox
+
+eval "$(zoxide init bash)"
