@@ -63,6 +63,6 @@ alias brgdec="sudo light -U 10"
 #==========================
 
 export EDITOR=nvim
-export BROWSER=firefox
+export BROWSER=brave
 
 eval "$(zoxide init bash)"

@@ -21,15 +21,15 @@ return {
       -- Create your keybindings here...
     end
 
-    require('mason-lspconfig').setup({
-      -- Update this list to the language servers you need installed
-      ensure_installed = {
-        "html",
-        "tailwindcss",
-        "ts_ls",
-        "gopls",
-        "yamlls",
-      },
-    })
+    -- require('mason-lspconfig').setup({
+    --   -- Update this list to the language servers you need installed
+    --   ensure_installed = {
+    --     "html",
+    --     "tailwindcss",
+    --     "ts_ls",
+    --     "gopls",
+    --     "yamlls",
+    --   },
+    -- })
   end
 }

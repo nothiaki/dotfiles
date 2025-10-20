@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for turn off nightlight
+
+[Timer]
+OnCalendar=06:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Turn off the nightlight
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/hiaki/.Xauthority
+ExecStart=redshift -x
