@@ -37,9 +37,6 @@ alias pacc="sudo pacman -Scc"                           # clean cache
 alias nl="redshift -O 3600"
 alias dl="redshift -x"
 
-#flameshot
-alias prt="flameshot launcher"
-
 #system
 alias shutdown="sudo shutdown -h now"
 
@@ -56,9 +53,9 @@ alias test="npm run test"
 #zip
 alias zzip="sudo zip -9 -r "
 
-#light
-alias brginc="sudo light -A 10"
-alias brgdec="sudo light -U 10"
+# bright
+alias brginc="brightnessctl set +5%"
+alias brgdec="brightnessctl set 5%-"
 
 #==========================
 
@@ -66,3 +63,9 @@ export EDITOR=nvim
 export BROWSER=brave
 
 eval "$(zoxide init bash)"
+
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    eval "$(ssh-agent -s)"
+fi
+
+ssh-add -l &>/dev/null || ssh-add ~/.ssh/id_ed25519

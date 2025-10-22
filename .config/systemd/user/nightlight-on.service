@@ -5,4 +5,4 @@ Description=Turn on the nightlight
 Type=oneshot
 Environment=DISPLAY=:0
 Environment=XAUTHORITY=/home/hiaki/.Xauthority
-ExecStart=redshift -O 3600
+ExecStart=redshift -O 4400

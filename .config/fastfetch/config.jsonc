@@ -1,28 +1,24 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "source": "~/.config/fastfetch/min-arch.txt",
+    "source": "~/.config/fastfetch/thinkarch-center.txt",
+    "color": {
+      "1": "white",
+      "2": "red"
+    },
     "padding": {
-      "top": 2,
-      "right": 6
+      "left": 2
     }
   },
   "modules": [
     "title",
     "separator",
     "os",
-    "kernel",
     "uptime",
     "packages",
     "shell",
-    "de",
     "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
     "terminal",
-    "poweradapter",
     "break",
     "colors"
   ]
